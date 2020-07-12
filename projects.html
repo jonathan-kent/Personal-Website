@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jonathan Kent | Personal Website</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="sidebar">
+    <img id="profile" src="images/headshot.png">
+    <h1 id="name">Jonathan Kent</h1>
+    <a href="index.html">About Me</a>
+    <a href="">Projects</a>
+    <a href="resume.html">Resume</a>
+    <div class="icon-container">
+      <a class="icon-link icon" href="resume_2019.pdf" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a class="icon-link icon" href="https://github.com/jonathan-kent" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="typing-wrapper">
+      <div class="typing">
+        <h1>Projects</h1>
+      </div>
+    </div>
+    <div class="project-list">
+      <div class="project-box">
+        <h3><a href="3D_ray_marching/index.html">3D Ray Marching</a></h3><br>
+        <div class="screenshots">
+          <img src="images/3d_ray_march_1.jpg">
+          <img src="images/3d_ray_march_2.jpg">
+        </div>
+        I used ray marching and signed distance functions to draw a scene onto an HTML canvas using JavaScript.
+        The scene is lit using diffuse lighting and includes shadows. I implemented signed distance
+        functions for a sphere, a box, and a plane. The lightsource rotates slowly around the scene,
+        but with three objects, the scene runs very slowly.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/3D-Ray-Marching" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3><a href="2D_ray_marching/index.html">2D Ray Marching Visualization</a></h3><br>
+        <div class="screenshots">
+          <img src="images/2d_ray_march.jpg">
+        </div>
+        Before rendering a full 3D scene using ray marching, I created a 2D visualization of sphere tracing.
+        The canvas displays the circles that represent the ray marching steps leaving the "camera". The
+        "camera" turns red when it detects a collision.<br><br>
+        Left and right arrow keys rotate the "camera" and the up and down arrow keys move the "camera" forward
+        and back. Clicking on the scene adds a random shape to the scene.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/2D-Sphere-Tracing-Demo" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3>Crossword Maker</h3><br>
+        <div class="screenshots">
+          <iframe src="https://giphy.com/embed/WOlZp0UZfDNe8rAUFd" width="480" height="478" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        This project allows you to create a crossword grid and then attempts to fill it using words taken from Dictionary.com and
+        Wikipedia article titles. Custom words can be filled into the crossword before the rest of the crossword is filled.
+        Unfortunately, pulling from such a large pool of possible words creates many crosswords with very obscure words and acronyms.
+        Words were collected using Python and Selenium, and the crossword is created and filled using Java.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/Crossword-Maker" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3>Mapping Google Trends</h3><br>
+        <div class="screenshots">
+          <img src="images/nfl.jpg">
+          <img src="images/mlb.jpg">
+        </div>
+        Google Trends limits the number of comparisons to 5 search terms. I wanted to make a visualization of sports teams based on
+        Google search popularity, so I used Python and the Pytrends API to compare all teams in a league to each other.
+        I used this project to create maps of NFL, NBA, NHL, MLB, and MLS teams in the United States.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/Google-Trends-Mapping" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3><a href="binary_trees/index.html">Binary Tree Signatures</a></h3><br>
+        <div class="screenshots">
+          <img src="images/binary_tree.jpg">
+        </div>
+        This project creates a visualization of binary trees. Every binary tree has a unique signature created by a pre-order traversal.
+        Each node is represented by two decimals. The first digit represents a left child and the second represents the right child. for
+        example, 01 represents a node with a right child, but no left child.<br><br>
+        Trees can be constructed by clicking on the nodes or by entering a valid binary tree signature in either
+        decimal or binary representation.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/Binary-Tree-Signatures" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3><a href="solitaire/index.html">Solitaire AI</a></h3><br>
+        <div class="screenshots">
+          <img src="images/solitaire.jpg">
+        </div>
+        This project was created after seeing that a skilled solitaire player wins around 43% of games. I attempted to see what percentage
+        of games of solitaire a simple AI could win. The AI I created is capable of winning games, but it is no where near a 43% win rate.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/Solitaire-AI" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3>Instagram Bot</h3><br>
+        After seeing that the Instagram API would be deprecated in 2020, I decided to use Python and Selenium to create an Instagram
+        bot that analyzes the likes on recent Instagram posts. It looks at the previous four posts and collects the lists of likes for each
+        photo. It then looks at the most recent post and displays likes from people who did not like many of the previous posts,
+        and people who liked many of the previous posts, but not the most recent one.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/Instagram-Bot" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-box">
+        <h3>Topographic Map Experiments</h3><br>
+        <div class="screenshots">
+          <iframe src="https://giphy.com/embed/XDumAqxIvAjTU6W2xr" width="480" height="262" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        In this project, I created a few experiments using screenshots of topographic maps. One of the more interesting looking experiments
+        was looking at the relative heights of the terrain. The Java program converts the topographic map into a height map and then
+        displays parts of the terrain that would appear higher or lower from the perspective of someone standing at the mouse cursors location.
+        <div class="icon-container">
+          <a class="icon-link icon" href="https://github.com/jonathan-kent/Topographic-Map-Experiments" target="_blank" id="project-icon">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  background-color: #000000;
+  color: #759AAB;
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* sidebar menu */
+.sidebar {
+  text-align: center;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #759AAB;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #254441;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #EDBFC6;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#profile {
+  border-radius: 50%;
+  height: 150px;
+}
+
+#name {
+  color: #254441;
+  font-size: 30px;
+}
+
+.typing-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.typing {
+  position: absolute;
+}
+
+.typing h1 {
+  margin: 0px;
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #759AAB; /* cursor */
+  white-space: nowrap;
+  letter-spacing: .2em;
+  animation:
+    type-effect 2s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes type-effect {
+  0%{width: 0;}
+  100%{width: 100%;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #759AAB; }
+}
+
+
+.icon {
+  color: #759AAB;
+  margin-right: 10px;
+}
+
+.icon :hover {
+  color: #EDBFC6;
+}
+
+.icon-container {
+  bottom: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: inline-block;
+  margin-left: 300px;
+  padding: 50px 50px;
+}
+
+.about-me {
+  text-align: center;
+  padding: 30px 80px;
+}
+
+
+.project-list {
+  padding: 50px 50px;
+}
+
+.project-box {
+  color: #000000;
+  display: block;
+  border-radius: 25px;
+  background: #759AAB;
+  padding: 20px;
+  margin: 10px;
+  width: 100%px;
+  height: 100%;
+}
+
+.project-box:hover {
+  box-shadow: 5px 5px 10px #EDBFC6;
+}
+
+#project-icon {
+  color: #000000;
+}
+
+.screenshots {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.resume-container {
+  tex-align:center;
+  padding: 50px 50px;
+}

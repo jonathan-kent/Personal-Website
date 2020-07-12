@@ -1,0 +1,43 @@
+
+svg{
+  overflow: visible;
+}
+
+line{
+  stroke-width: 3px;
+  stroke: #000000;
+}
+
+circle{
+  r: 10px;
+  fill: black;
+}
+
+#rightChild{
+  position: absolute;
+  background-color: #696969;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+#leftChild{
+  position: absolute;
+  background-color: #696969;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.tree{
+  height: auto;
+  width: auto;
+}

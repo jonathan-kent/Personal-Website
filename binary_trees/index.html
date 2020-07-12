@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Binary Tree Signatures</title>
+</head>
+<body>
+
+    <form>
+      <input type="text" id="signature" name="signature">
+      <label for="signature">Enter Signature</label>
+      <br>
+      <input type="radio" id="binary" name="base" checked="checked">
+      <label for="binary">Binary</label>
+      <input type="radio" id="decimal" name="base">
+      <label for="decimal">Decimal</label>
+      <button type="button" onClick="fromForm()">Create Tree</button>
+    </form>
+    <div id="signatureDisplay">
+      Current Binary Signature: 00 <br>
+      Current Decimal Signature: 0
+    </div>
+    <div class="tree">
+      <svg>
+        <svg id="svg"></svg>
+      </svg>
+      <div id="buttons"></div>
+      <div id="tree"></div>
+    </div>
+
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
